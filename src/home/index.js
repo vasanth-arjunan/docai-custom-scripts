@@ -4,4 +4,10 @@
  * Add or delete these files as per needed.
  */
 
-console.log('Hello from Home folder')
+import { PageLoad } from "./page-load";
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+window.addEventListener("DOMContentLoaded", () => {
+    gsap.registerPlugin(ScrollTrigger)
+    PageLoad();
+});
