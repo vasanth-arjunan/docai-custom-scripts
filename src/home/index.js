@@ -6,8 +6,10 @@
 
 import { PageLoad } from "./page-load";
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { SectionHero } from "./section-hero";
 
 window.addEventListener("DOMContentLoaded", () => {
     gsap.registerPlugin(ScrollTrigger)
     PageLoad();
+    SectionHero();
 });
