@@ -7,47 +7,50 @@ export const PageLoad = () => {
     const heroCTA = document.querySelectorAll(".sticky_nav");
     const heroEmojis = document.querySelectorAll(".hero_emojis > *");
 
-    const tl = gsap.timeline();
-
-    // 1) Navbar reveal
-    tl.from(navItems, {
+    // Navbar Reveal
+    gsap.from(navItems, {
         opacity: 0,
         y: 15,
         duration: 0.6,
         stagger: 0.1,
         ease: "power1.out",
+        delay: 0,
     });
 
-    // 2) Hero Content Reveal
-    tl.from(heroItems, {
+    // Hero content Reveal
+    gsap.from(heroItems, {
         opacity: 0,
         y: 20,
         duration: 0.5,
         stagger: 0.1,
         ease: "power1.out",
-    }, "+=0.5");
+        delay: 0.5,
+    });
 
-    // 3) Hero CTA Reveal
-    tl.from(heroCTA, {
+    // Hero CTA Reveal
+    gsap.from(heroCTA, {
         opacity: 0,
         y: 20,
         duration: 0.5,
         ease: "power1.out",
-    }, "+=1");
+        delay: 1,
+    });
 
-    // 4) Hero Image Reveal
-    tl.from(heroImages, {
+    // Hero Images Reveal
+    gsap.from(heroImages, {
         opacity: 0,
         duration: 0.3,
         stagger: 0.1,
         ease: "power1.out",
-    }, "+=1.3");
+        delay: 1.3,
+    });
 
-    // 5) Hero Emojis Reveal
-    tl.from(heroEmojis, {
+    // Hero Emojis Reveal
+    gsap.from(heroEmojis, {
         opacity: 0,
         duration: 0.5,
         stagger: 0.1,
         ease: "power1.out",
-    }, "+=1.3");
+        delay: 1.3,
+    });
 };
