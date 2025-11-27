@@ -3,7 +3,7 @@
  */
 
 import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import ScrollTrigger from 'gsap/ScrollTrigger';
 import { GlobalContentReveal } from '../helpers/global-content-reveal'
 
 window.addEventListener("DOMContentLoaded", () => {
