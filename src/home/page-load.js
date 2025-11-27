@@ -40,7 +40,6 @@ export const PageLoad = () => {
     gsap.from(heroImages, {
         opacity: 0,
         duration: 0.3,
-        stagger: 0.1,
         ease: "power1.out",
         delay: 1.3,
     });

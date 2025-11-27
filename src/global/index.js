@@ -2,8 +2,10 @@
  * This file is to keep all the global functions that you want in the entire webflow site.
  */
 
-console.log('Hello from Global folder')
+import { GlobalContentReveal } from '../helpers/global-content-reveal'
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-import { functionName } from '../helpers/function-name'
-
-functionName()
+window.addEventListener("DOMContentLoaded", () => {
+    gsap.registerPlugin(ScrollTrigger);
+    GlobalContentReveal();
+});
