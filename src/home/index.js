@@ -8,9 +8,11 @@ import gsap from "gsap";
 import { PageLoad } from "./page-load";
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { SectionHero } from "./section-hero";
+import { SectionHowItWorks } from "./section-how-it-works";
 
 window.addEventListener("DOMContentLoaded", () => {
     gsap.registerPlugin(ScrollTrigger);
     PageLoad();
     SectionHero();
+    SectionHowItWorks();
 });

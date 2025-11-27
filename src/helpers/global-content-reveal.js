@@ -1,5 +1,4 @@
 import gsap from "gsap";
-import ScrollTrigger from 'gsap/ScrollTrigger';
 
 export const GlobalContentReveal = () => {
     const sections = document.querySelectorAll(".content_staggered_reveal");
